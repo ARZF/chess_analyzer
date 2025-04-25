@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Analysis</title>
+</head>
+<body>
+    <h1>Game Analysis</h1>
+    <table border="1">
+        <tr>
+            <th>Move</th>
+            <th>Best Move</th>
+            <th>Evaluation</th>
+        </tr>
+        {% for item in analysis %}
+        <tr>
+            <td>{{ item.move }}</td>
+            <td>{{ item.best_move }}</td>
+            <td>{{ item.evaluation }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
